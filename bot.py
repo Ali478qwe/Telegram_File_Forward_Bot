@@ -1,8 +1,8 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder , CommandHandler , ContextTypes , MessageHandler , filters
+import os 
 
-
-TOKEN = "6912062316:AAEZcZHOu8RgIAapevtloxfQ_7DU5gzxSHA"
+TOKEN = os.environ['TOKEN']
 
 async def start(update: Update , contex: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("robot telegramet dare kar mikone")
